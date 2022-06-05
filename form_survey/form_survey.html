@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Survey Form Page</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="styles.css"
+
+    </head>
+
+    <body>
+        <div class="container">
+            <header class="header">
+            <h1 id="title">This is the title of the survey</h1>
+            <p id="description">This is the description of the survey</p>
+            </header>
+            
+            <form id="survey-form">
+                <p>
+                <label id="name-label" for="name">This is the label for the first input: </label>
+                <input type="text" id="name" name="name" required placeholder="First Input Placeholder"><br>
+                </p>
+
+                <p>
+                <label id="email-label" for="number">This is the label for the email: </label>
+                <input type="email" id="email" name="email" placeholder="Email Input Placeholder" required><br>
+                </p>
+                
+
+                <p>
+                    <label id="number-label" for="number">This is the label for the NUMBER: </label>
+                    <input type="number" id="number" name="number" placeholder="Number Input Placeholder" min="4" max="25" required>
+                </p>
+                <p>
+                <label for="options">Select an option from here: </label>
+                <select id="dropdown" name="options">
+                    <option>First Option</option>
+                    <option>Second Option</option>
+                </select>
+                </p>
+                <p>
+                    <textarea name="message" style="width:600px;height:200px">
+                    This is the area from textarea !!!!!
+                    </textarea>
+                </p>
+                <p style="text-align: center;">
+                    
+                    <input type="radio" id="firstradio" name="buttons" value="First Radio">
+                    <label for="firstradio">First Radio</label><br>
+                    <input type="radio" id="secondaryone" name="buttons" value="Unu Radio">
+                    <label for="secondaryone">Unu Radio</label><br>
+                    <input type="radio" id="secondradio" name="buttons" value="Second Radio">
+                    <label for="secondradio">Second Radio</label><br>
+                    
+
+
+                </p>
+                <p>
+                    <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                    <label for="vehicle1"> I have a bike</label><br>
+                    <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+                    <label for="vehicle2"> I have a car</label><br>
+                    <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+                    <label for="vehicle3"> I have a boat</label>
+
+                </p>
+                <p>
+                    <button type="submit" id="submit" value="Submit">
+                        Submit
+                    </button>
+                </p>
+            </form>
+
+
+
+        </div>
+    </body>
+
+
+
+
+</html>
